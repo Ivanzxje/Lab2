@@ -152,8 +152,7 @@ This will generate the corrupted file message_ofb_corrupted.enc.
 ### Step 3: Decrypt the Corrupted File
 Now, decrypt the corrupted file using OpenSSL:
 Command: openssl enc -d -aes-256-cfb -in message_cfb_corrupted.enc -out decrypted_cfb_corrupted.txt -pass pass:yourpassword -pbkdf2
-![image](/image15.png)
-
+![image](/cfb.png)
 
 ### For message_ofb.enc:
 ### Step 1:
@@ -180,7 +179,8 @@ This will generate the corrupted file message_ofb_corrupted.enc.
 ### Step 3: Decrypt the Corrupted File
 Now, decrypt the corrupted file using OpenSSL:
 Command: openssl enc -d -aes-256-ofb -in message_ofb_corrupted.enc -out decrypted_ofb_corrupted.txt -pa
-![image](/cfb.png)
+![image](/image15.png)
+
 
 ### Step 5: Check the Decrypted Content
 Check the content of the decrypted files to observe how the 8th byte modification affected the decryption process:
