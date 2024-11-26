@@ -184,9 +184,9 @@ Command: openssl enc -d -aes-256-ofb -in message_ofb_corrupted.enc -out decrypte
 
 ### Step 5: Check the Decrypted Content
 Check the content of the decrypted files to observe how the 8th byte modification affected the decryption process:
-- Commnad i use:
+- Command i use:
 cat decrypted_cfb_corrupted.txt
-![image](/cfbans.png)
+![image](/cfbans.jpg)
 cat decrypted_ofb_corrupted.txt
 result: 
 ![image](/ofb2.png)
