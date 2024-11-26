@@ -179,7 +179,7 @@ This will generate the corrupted file message_ofb_corrupted.enc.
 ### Step 3: Decrypt the Corrupted File
 Now, decrypt the corrupted file using OpenSSL:
 Command: openssl enc -d -aes-256-ofb -in message_ofb_corrupted.enc -out decrypted_ofb_corrupted.txt -pa
-![image](/image15.png)
+![image](/ofb3.png)
 
 
 ### Step 5: Check the Decrypted Content
